@@ -11,7 +11,7 @@
 
 public class Scheduler 
 {
-    private LinkedList<SimThread>[] readyQ;// = new Queue<SimThread>[5];
+    LinkedList<SimThread>[] readyQ;//= new LinkedList<SimThread>[5];// = new Queue<SimThread>[5];
     private OS os;                       // Reference to the "OS"
     
     /**
@@ -21,7 +21,7 @@ public class Scheduler
     public Scheduler(OS os)//hello
     {
         this.os = os;
-        //readyQ = new LinkedList<SimThread>[5];//new LinkedList<SimThread>();//array of qs
+        readyQ = (LinkedList<SimThread>[])new LinkedList<?>[5];//new LinkedList<SimThread>();//array of qs
         for (int i=0; i<5; i++)
         {
             readyQ[i] = new LinkedList<SimThread>();//initialize qs
