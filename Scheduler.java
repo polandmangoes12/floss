@@ -66,10 +66,12 @@ public class Scheduler
             if (code==2)
             {
                 p=p-1;
+                st.setPriority(p);
             }
             else if (code==1)
             {
                 p=p+1;
+                st.setPriority(p);
             }
             if (p>p1)
             {
