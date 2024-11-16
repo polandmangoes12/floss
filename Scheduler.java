@@ -18,7 +18,7 @@ public class Scheduler
      * Constructor.
      * @param os A reference to the simulation's OS object.
      */
-    public Scheduler(OS os)
+    public Scheduler(OS os)//hello
     {
         this.os = os;
         //readyQ = new LinkedList<SimThread>[5];//new LinkedList<SimThread>();//array of qs
