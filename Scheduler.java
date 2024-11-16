@@ -103,6 +103,30 @@ public class Scheduler
             else
             {
                 readyQ[p].add(st);
+                if (p1==0)
+                {
+                     os.setQuantum(4);
+                }
+                else if (p1==1)
+                {
+                    os.setQuantum(8);
+                }
+                else if (p1==2)
+                {
+                    os.setQuantum(16);
+                }
+                else if (p1==3)
+                {
+                    os.setQuantum(25);
+                }
+                else if (p1==4)
+                {
+                    os.setQuantum(40);
+                }
+                else
+                {
+                    System.out.println("error bc p1!=0,1,2,3,or 4");
+                }
             }
     	}
     }
