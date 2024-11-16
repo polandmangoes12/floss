@@ -20,7 +20,7 @@ public class Scheduler
      */
     public Scheduler(OS os)//hello
     {
-        this.os = os;
+        this.os = os;//hello
         readyQ = (LinkedList<SimThread>[])new LinkedList<?>[5];//new LinkedList<SimThread>();//array of qs
         for (int i=0; i<5; i++)
         {
